@@ -1,0 +1,36 @@
+.left-pane {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  height: 100%;
+
+  .custom-inputs-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    width: 250px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: lightgray;
+    padding: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .searchbar {
+    box-sizing: border-box;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}

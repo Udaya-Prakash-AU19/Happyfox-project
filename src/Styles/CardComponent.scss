@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    gap: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: aliceblue;
+    width: 275px;
+    height: 100px;
+    
+    
+    .image-container {
+        padding: 2px;
+        height: 100%;
+        width: 120px;
+        border-radius: "3px";
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        div:first-child {
+            font-weight: bold;
+        }
+    }
+}

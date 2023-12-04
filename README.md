@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using [clean-cra Template](https://github.com/JorgePasco1/cra-template-clean-cra).
+# Happy fox
 
-## Available Scripts
+## Hierarchial representation of data
 
-In the project directory, you can run:
+# Setup
 
-### `npm start`
+#### Prequisites
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Node.js](http://nodejs.org/) installed
+2. [Miragejs](https://miragejs.com/) installed
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Project Setup
 
-### `npm test`
+```
+$ git clone https://github.com/Udaya-Prakash-AU19/Happyfox-project
+$ npm install
+$ npm start                             # Start up the server
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Steps To Start Application
 
-### `npm run build`
+1. Open terminal and navigate to **happyfoxasg** directory
+2. For development build, execute `npm start`.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Packages
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### For hierarchial view
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Used [react-d3-tree](https://www.npmjs.com/package/react-d3-tree) installed
 
-### `npm run eject`
+#### For drag and drop
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Used [react-beautiful-dnd](https://www.npmjs.com/package/react-beautiful-dnd) installed
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### About
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project has left pane and right content. In the left pane, the list of employees data are shown along with a search bar and a select filter.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+On searching using any keyword like name, team or designation, the relevant record will be displayed on the left pane and the right content will also contain only the relevant record in the hierarchial representation.
 
-## Learn More
+The app works fine in rendering the left pane and the hierarchial view. At present the user can search and select data. As the library _react-beautiful-dnd_ cannot be used to drag svg elements, drag and drop function cannot be performed currently. So the user can only try dragging the cards for now.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app would be updated with drag and drop feature in future.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+###### The Application is deployed on Netlify
