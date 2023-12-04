@@ -191,6 +191,7 @@ export default function RightContent({ employeesList = [] }) {
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
+            <h2>Employee hierarchial chart:</h2>
             {orgData && (
               <Tree
                 data={orgData}

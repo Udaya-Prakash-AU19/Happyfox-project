@@ -1,12 +1,13 @@
 .org-tree-container {
-    background-color: aliceblue;
-    height: 100vh;
+  background-color: aliceblue;
+  height: 100vh;
+  padding: 20px;
 
-    .rd3t-g {
-        transform: translateX(50%) translateY(25%);
-    }
+  .rd3t-g {
+    transform: translateX(50%) translateY(25%);
+  }
 
-    .link-to-branch:nth-child(2) {
-        d: path('m0,0 v20 h-50 v20');
-    }
+  .link-to-branch:nth-child(2) {
+    d: path("m0,0 v20 h-50 v20");
+  }
 }

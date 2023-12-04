@@ -5,6 +5,10 @@
   font-size: 14px;
   height: 100%;
 
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
   .custom-inputs-bar {
     display: flex;
     flex-direction: column;
